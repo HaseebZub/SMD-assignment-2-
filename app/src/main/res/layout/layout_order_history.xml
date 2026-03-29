@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    android:padding="16dp">
+
+    <TableRow android:background="@color/gray">
+        <TextView android:text="Order ID" android:padding="8dp" android:textStyle="bold"/>
+        <TextView android:text="Product" android:padding="8dp" android:textStyle="bold"/>
+        <TextView android:text="Price" android:padding="8dp" android:textStyle="bold"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="#12345" android:padding="8dp"/>
+        <TextView android:text="Nike Shoes" android:padding="8dp"/>
+        <TextView android:text="$120" android:padding="8dp"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="#12346" android:padding="8dp"/>
+        <TextView android:text="Adidas Watch" android:padding="8dp"/>
+        <TextView android:text="$85" android:padding="8dp"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="#12347" android:padding="8dp"/>
+        <TextView android:text="T-Shirt" android:padding="8dp"/>
+        <TextView android:text="$25" android:padding="8dp"/>
+    </TableRow>
+
+</TableLayout>

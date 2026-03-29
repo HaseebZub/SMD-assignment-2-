@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Greeting -->
+        <TextView
+            android:id="@+id/tv_greeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good day! 🏠"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="12dp" />
+
+        <!-- Profile Card (reused from Assignment 1) -->
+        <include layout="@layout/item_profile_card" />
+
+        <!-- Stats Bar (reused from Assignment 1) -->
+        <include layout="@layout/layout_stats_bar" />
+
+        <!-- Quick Controls Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quick Controls"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black" />
+        <include layout="@layout/layout_device_carousel" />
+
+        <!-- Room Overview (Grid) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room Overview"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black" />
+        <include layout="@layout/layout_dashboard_grid" />
+
+        <!-- Tags -->
+        <include layout="@layout/layout_tag_cloud" />
+
+        <!-- Recent Activity Table -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent Activity"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black" />
+        <include layout="@layout/table_device_history" />
+
+        <!-- Theme Selector -->
+        <include layout="@layout/layout_theme_selector" />
+
+        <!-- Settings Row -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black" />
+        <include layout="@layout/row_settings" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

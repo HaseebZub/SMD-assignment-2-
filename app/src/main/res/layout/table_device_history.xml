@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/bg_card">
+
+    <!-- Requirement 7: TableLayout with stretchColumns -->
+    <TableRow android:padding="8dp">
+        <TextView
+            android:text="Device"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+        <TextView
+            android:text="Action"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+        <TextView
+            android:text="Time"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="end" />
+    </TableRow>
+
+    <View
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+    <TableRow android:padding="8dp">
+        <TextView android:text="Main Door" />
+        <TextView android:text="Unlocked" android:textColor="@color/accent" />
+        <TextView android:text="10:45 AM" android:gravity="end" />
+    </TableRow>
+
+    <TableRow android:padding="8dp">
+        <TextView android:text="Kitchen Light" />
+        <TextView android:text="Off" />
+        <TextView android:text="09:12 AM" android:gravity="end" />
+    </TableRow>
+
+    <TableRow android:padding="8dp">
+        <TextView android:text="AC Unit" />
+        <TextView android:text="Temp 22°C" android:textColor="@color/primary" />
+        <TextView android:text="08:30 AM" android:gravity="end" />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:alignmentMode="alignMargins"
+    android:columnCount="2"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_columnWeight="1"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_card"
+        android:gravity="center"
+        android:text="Orders" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_columnWeight="1"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_card"
+        android:gravity="center"
+        android:text="Wishlist" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_columnWeight="1"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_card"
+        android:gravity="center"
+        android:text="Cart" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_columnSpan="2"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_card"
+        android:gravity="center"
+        android:text="Offers (Spans 2 columns)" />
+
+</GridLayout>

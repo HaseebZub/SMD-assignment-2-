@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Payment Method"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioButton
+        android:id="@+id/rb_credit_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Credit Card" />
+
+    <RadioButton
+        android:id="@+id/rb_cod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cash on Delivery" />
+
+    <RadioButton
+        android:id="@+id/rb_paypal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PayPal" />
+
+</RadioGroup>

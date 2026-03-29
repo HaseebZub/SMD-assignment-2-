@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/bg_card"
+    android:layout_margin="8dp">
+
+    <!-- Requirement 4: RelativeLayout usage -->
+    <View
+        android:id="@+id/view_icon_placeholder"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/primary"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tv_setting_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="System Notifications"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/view_icon_placeholder"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/tv_setting_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable or disable all alerts"
+        android:textSize="14sp"
+        android:textColor="@color/gray_medium"
+        android:layout_below="@id/tv_setting_title"
+        android:layout_toRightOf="@id/view_icon_placeholder"
+        android:layout_marginStart="16dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>
